@@ -4,7 +4,7 @@
  * Feel free to let us know via PR, if you find something broken in this config
  * file.
  */
-
+import Application from '@ioc:Adonis/Core/Application'
 import Env from '@ioc:Adonis/Core/Env'
 import { DatabaseConfig } from '@ioc:Adonis/Lucid/Database'
 
@@ -19,7 +19,8 @@ const databaseConfig: DatabaseConfig = {
   | file.
   |
   */
-  connection: Env.get('DB_CONNECTION'),
+  // connection: Env.get('DB_CONNECTION'),
+  connection: Application.inDev ? 'mysql' : 'pg' ,
 
   connections: {
     /*
