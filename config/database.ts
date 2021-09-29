@@ -21,8 +21,8 @@ const databaseConfig: DatabaseConfig = {
   | file.
   |
   */
-  // connection: Env.get('DB_CONNECTION'),
-  connection: Application.inDev ? 'mysql' : 'pg' ,
+  connection: Env.get('DB_CONNECTION'),
+  // connection: Application.inDev ? 'mysql' : 'pg' ,
 
   connections: {
     /*
