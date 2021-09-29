@@ -23,7 +23,7 @@ export default {
 						scheme: 'bearer', 
 					}
 				}
-			}
+			},
 		},
 		apis: [
 			'app/**/*.ts',
